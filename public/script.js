@@ -140,4 +140,3 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("welcomeMessage").innerText = `Welcome, ${userName}`;
     }
 });
-

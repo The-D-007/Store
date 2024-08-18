@@ -86,4 +86,3 @@ exports.getReceipt = (userDetails, cartItems) => {
     total: total,
   };
 };
-

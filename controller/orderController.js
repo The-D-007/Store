@@ -1,7 +1,6 @@
 "use strict";
 
 const mysql = require("mysql2");
-
 const conn = mysql.createPool({
   connectionLimit: 10,
   host: "localhost",
