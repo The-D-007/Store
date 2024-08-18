@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="allOrdersMain">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Province</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Total Items</th>
+                    <th>SubTotal</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% orders.forEach((order) => { %>
+                  <tr>
+                    <td><%= order.Name %></td>
+                    <td><%= order.Address %></td>
+                    <td><%= order.City %></td>
+                    <td><%= order.Province %></td>
+                    <td><%= order.Phone %></td>
+                    <td><%= order.Email %></td>
+                    <td><%= order.itemCount %></td>
+                    <td><%= order.SubTotal %></td>
+                    <td><%= order.Tax %></td>
+                    <td><%= order.Total %></td>
+                  </tr>
+                <% }); %>
+              </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
